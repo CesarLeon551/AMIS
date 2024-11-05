@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Viaje de la Conexión</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Aquí enlazamos el archivo CSS -->
+</head>
+<body>
+    <header></header>
+
+    <div id="map">
+        <div id="level1" class="level">Cabina de la Amistad</div>
+        <div id="level2" class="level">Montaña de los Miedos</div>
+        <div id="level3" class="level">Río de la Incertidumbre</div>
+        <div id="level4" class="level">Bosque de la Duda</div>
+        <div id="level5" class="level">Ciudad de la Valentía</div>
+        <div id="level6" class="level">Mar de Confianza</div>
+    </div>
+
+    <section id="game-area">
+        <div id="friendship-cabin" class="minigame">
+            <h3>Cabina de la Amistad</h3>
+            <p>
+------<br>
+<br>
+En la Torre de Gryffindor, donde el fuego titila,<br>
+se forjan los lazos que el alma destila.<br>
+Como en el Expreso que a Hogwarts nos lleva,<br>  
+nuestra amistad es un hechizo que nunca se quiebra.<br>
+<br>
+Con varitas en mano, enfrentamos la vida,<br>
+en cada aventura, la lealtad es la guía.<br>
+Cruzamos los pasillos, compartimos secretos,<br>  
+en las sombras y luces, nunca hay retrocesos.<br>
+<br>
+Si las sombras acechan y el miedo se asoma,<br>
+seré tu Patronus, iluminaré laroma.<br>
+Con el coraje de Gryffindor, juntos luchamos,<br>  
+enfrentamos dragones, y jamás nos rendimos.<br>
+<br>
+En el Callejón Diagon, entre risas y sueños,<br>
+te ofrezco mi mano, sin miedos ni dueños.<br>
+Como los elfos que cuidan con devoción,<br>
+mi amistad es un lazo, pura conexión.<br>
+<br>
+Así que recuerda, en días oscuros,<br>
+mi apoyo es un hechizo, siempre en tus muros.<br>  
+Como en la batalla, seré tu aliado,<br>
+en este mundo mágico, jamás estarás solo.<br>
+<br>
+---
+</p>
+        </div>
+
+        <div id="fear-mountain" class="minigame">
+            <h3>Montaña de los Miedos</h3>
+            <p>Selecciona un miedo:</p>
+            <select id="fear-selection">
+                <option value="">Selecciona un miedo</option>
+                <option value="1">Cuerpo</option>
+                <option value="2">Caracter</option>
+                <option value="3">Secreto</option>
+            </select>
+            <button onclick="getFearAdvice()">Cliqueame</button>
+        </div>
+
+        <div id="uncertainty-river" class="minigame">
+            <h3>Río de la Incertidumbre</h3>
+            <p>En el río de la incertidumbre, cada corriente nos lleva a un nuevo descubrimiento.<br>
+<br>
+	       La incertidumbre es el preludio de la aventura; cada duda es una oportunidad disfrazada.<br>
+<br>
+	       La incertidumbre es el lienzo en blanco donde pintamos nuestros sueños.<br>
+
+</p>
+        </div>
+
+        <div id="doubt-forest" class="minigame">
+            <h3>Bosque de la Duda</h3>
+            <p>¿Apoco crees que te dejare de dar lata si no funciona?</p>
+            <button onclick="checkDoubtAnswer(true)">Sí</button>
+            <button onclick="checkDoubtAnswer(false)">No</button>
+        </div>
+
+        <div id="bravery-city" class="minigame">
+            <h3>Ciudad de la Valentía</h3>
+            <p>¿Enserio quieres que pase?</p>
+            <button onclick="checkBraveryAnswer(true)">Sí</button>
+            <button onclick="checkBraveryAnswer(false)">No</button>
+        </div>
+
+        <div id="trust-sea" class="minigame">
+            <h3>Mar de Confianza</h3>
+            <p>Se que las palabras no cambiaran nada, ni esto que hice pero quiero que pase, quiero tu ayuda.<br>
+	       Esto que te pido no es lo mas normal lo se, ni lo mas correcto. <br>
+	       Pero desde cuando nos negamos a la aventura.<br>
+	       Si no se puede te entendere, no tienes que aceptar.<br>	
+</p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script> <!-- Archivo JavaScript para la lógica del juego -->
+</body>
+</html>
